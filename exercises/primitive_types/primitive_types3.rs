@@ -5,11 +5,12 @@
 // I AM NOT DONE
 
 fn main() {
-    let a = ???
+    
+    let a:[usize;100] =  core::array::from_fn(|i|i+1);
 
     if a.len() >= 100 {
-        println!("Wow, that's a big array!");
+        println!("Wow, that's a big array!{:#?}",a);
     } else {
-        println!("Meh, I eat arrays like that for breakfast.");
+        println!("Meh, I eat arrays like that for breakfast.{}", a.len());
     }
 }
